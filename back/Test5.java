@@ -1,3 +1,5 @@
+package back;
+
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -13,7 +15,6 @@ public class Test5 {
 	static int[] check = {-1,5};
 	
 	public static void main(String[] args) throws IOException {
-		//System.setIn(new FileInputStream("Test5.txt"));
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		board = new int[19][19];
 		for(int i=0; i<19; i++) {
