@@ -1,7 +1,9 @@
+package 재귀;
+
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Main {
+public class BJ24060 {
     static int N, K ,cnt=0, result=-1;
     static int[] tmp;
     public static void main(String[] args) throws IOException {
