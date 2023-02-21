@@ -1,6 +1,8 @@
+package 재귀;
+
 import java.io.*;
 
-public class Main {
+public class BJ2247 {
     static int N;
     static String[][] arr;
     public static void main(String[] args) throws IOException {
