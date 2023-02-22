@@ -1,11 +1,13 @@
-import java.io.*;
+package 재귀;
+
+import java.io.IOException;
 import java.util.Scanner;
 
 /*
-1부터 N까지 자연수 중에서 중복 없이 M개를 고른 수열
-고른 수열은 오름차순이어야 한다 15650
+자연수 N과 M이 주어졌을 때, 아래 조건을 만족하는 길이가 M인 수열을 모두 구하는 프로그램을 작성하시오.
+1부터 N까지 자연수 중에서 중복 없이 M개를 고른 수열 15649
  */
-public class Main {
+public class BJ15649 {
     static int N,M;
     static int[] arr;
     static boolean isUsed[];
@@ -15,11 +17,11 @@ public class Main {
         M = sc.nextInt();
         arr = new int[10];
         isUsed = new  boolean[10];
-        choice(0,1);
+        choice(0);
 
     }
 
-    static void choice(int k,int start){
+    static void choice(int k){
        if(k==M){
            for (int i = 0; i < M; i++) {
                System.out.print(arr[i]+" ");
@@ -27,11 +29,11 @@ public class Main {
            System.out.println();
            return;
        }
-        for (int i = start; i <=N; i++) {
+        for (int i = 1; i <=N; i++) {
             if(!isUsed[i]){
                 arr[k]=i;
                 isUsed[i]=true;
-                choice(k+1,i);
+                choice(k+1);
                 isUsed[i]=false;
             }
         }
