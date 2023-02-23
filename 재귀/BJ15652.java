@@ -1,7 +1,9 @@
-import java.io.*;
+package 재귀;
+
+import java.io.IOException;
 import java.util.Scanner;
 
-public class Main {
+public class BJ15652 {
     static int N,M;
     static int[] arr;
     static boolean isUsed[];
