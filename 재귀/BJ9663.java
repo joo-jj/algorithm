@@ -1,4 +1,6 @@
-import java.io.*;
+package 재귀;
+
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -6,7 +8,7 @@ import java.util.Scanner;
  *
  * N이 주어졌을 때, 퀸을 놓는 방법의 수를 구하는 프로그램을 작성하시오.
  */
-public class Main {
+public class BJ9663 {
     static int N;
     static int[] arr;
     static int count = 0;
